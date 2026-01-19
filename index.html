@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကစားသမား စာရင်း (No. | Username)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #012a36 0%, #050562 100%);
+            overflow-x: hidden; 
+            position: relative;
+            padding-top: 6rem;
+        }
+        
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+        .snowflake {
+            position: absolute; background: #FFFFFF; border-radius: 50%; pointer-events: none;
+            opacity: 0.4; will-change: transform; animation-name: fall;
+            animation-timing-function: linear; animation-iteration-count: infinite; z-index: 10;
+        }
+
+        #list-container::-webkit-scrollbar { width: 6px; }
+        #list-container::-webkit-scrollbar-track { background: rgba(1, 42, 54, 0.5); border-radius: 10px; }
+        #list-container::-webkit-scrollbar-thumb { background: rgba(1, 42, 54, 0.5); border-radius: 10px; }
+
+        .player-row:nth-child(even) { background-color: rgba(44, 118, 143, 0.05); }
+        .player-row:nth-child(odd) { background-color: rgba(255, 255, 255, 0.02); }
+        .player-row:hover { background-color: rgba(44, 118, 143, 0.2) !important; transition: 0.3s; }
+
+        .player-cell { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(44, 118, 143, 0.3); }
+    </style>
+</head>
+<body class="antialiased text-white relative pt-24 pb-10"> 
+    
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#012a36] shadow-2xl border-b border-[#2C768F]/50 h-20 flex items-center">
+        <div class="container mx-auto px-4 flex justify-between items-center w-full">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.pinimg.com/280x280_RS/91/c6/86/91c68661677e70e61c0f9304859d6440.jpg" 
+                     class="h-10 w-10 rounded-lg border-2 border-[#2C768F] object-cover">
+                <span class="text-xl font-bold text-[#2C768F] hidden sm:inline">GKK99</span>
+            </div>
+            <button onclick="window.location.href='https://gkk99cta.mssg.me/'"
+                    class="px-5 py-2 bg-[#2C768F] text-white font-semibold rounded-lg shadow-lg hover:bg-[#3a8eb1] transition duration-300 transform hover:scale-105 active:scale-95 border border-cyan-400/30">
+                ဆက်သွယ်ရန်
+            </button>
+        </div>
+    </nav>
+    
+    <div class="container mx-auto px-4 w-full max-sm:max-w-xs md:max-w-md lg:max-w-lg z-10 relative">
+        <header class="text-center mb-6">
+            <h1 class="text-4xl font-extrabold text-white drop-shadow-md tracking-tight">Congratulations</h1>
+            <p class="text-sm text-cyan-100/80 mt-2 leading-relaxed">
+                2026 နှစ်သစ် ကံကောင်းခြင်း ငွေသွင်းမလို အခမဲ့ဘောနပ်ကို Channel Join ရရှိသွားသောမန်ဘာများ
+            </p>
+        </header>
+
+        <div id="list-container" class="bg-[#012a36]/80 rounded-2xl shadow-[0_0_20px_rgba(44,118,143,0.3)] backdrop-blur-md border border-[#2C768F]/40 overflow-hidden overflow-y-auto h-[70vh] w-full">
+            <table class="min-w-full">
+                <thead class="bg-[#012a36] sticky top-0 z-20 shadow-md">
+                    <tr>
+                        <th class="player-cell w-1/4 font-bold text-xs uppercase tracking-widest text-[#2C768F]">No</th>
+                        <th class="player-cell w-3/4 font-bold text-xs uppercase tracking-widest text-[#2C768F]">Username</th>
+                    </tr>
+                </thead>
+                <tbody id="player-table-body" class="bg-transparent"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableBody = document.getElementById('player-table-body');
+            const body = document.body;
+
+            // ၁။ Real Usernames Updated
+            const realUsernames = [
+                "Aungpt123", "aakk2024", "kalarr", "lulu11", "Tuyoe1234",
+                "kaungsat111", "Haze31", "insane", "GKkaung9983", "Thawzinhtet12345",
+                "myint9919", "thant11", "BunnyPhoe00077", "wmxd1314", "mmm8388",
+                "09778844040", "wailinko11", "kokoz1234", "nak999", "htet788"
+            ];
+
+            // ၂။ Random Usernames Updated (180 entries)
+            const baseNames = [
+                "0942155890", "lucky77", "winner001", "0977451239", "ninja_99", "pro_player", "0968441122", "star789", "0925447788", "king_66",
+                "0944112233", "shadow88", "0979112255", "moonlight", "0969558877", "hero99", "0945123456", "diamond1", "0978665544", "tiger7",
+                "0926558811", "speedy", "0942998877", "flash01", "0997112244", "goldman", "0966554433", "ace999", "0975112233", "hunter",
+                "0940112244", "master0", "0925887766", "sky007", "0967114422", "bolt88", "0945778811", "joker5", "0977661122", "alpha1",
+                "0942445566", "beta99", "0968113355", "gamma7", "0979441122", "delta0", "0944336699", "omega2", "0926117744", "zeta3",
+                "0978996633", "fire88", "0969115533", "water1", "0945332211", "earth9", "0975664422", "wind44", "0940552211", "storm0",
+                "0925336699", "rock77", "0967448811", "jazz55", "0942116633", "blues1", "0997554411", "rap99", "0966882211", "pop33",
+                "0979116644", "rocker", "0944775511", "dancer", "0926338855", "singer", "0978114477", "coder1", "0969774411", "hacker",
+                "0945992211", "gamer7", "0975113355", "pro666", "0940339911", "noob00", "0925661144", "boss22", "0967993311", "chief9",
+                "0942774499", "pilot1", "0997331155", "driver", "0966114499", "rider8", "0979552288", "sailor", "0944118844", "flyer0",
+                "0926771133", "runner", "0978335511", "walker", "0969991144", "jumper", "0945116622", "climber", "0975994411", "hiker4",
+                "0940772255", "swimmer", "0925114488", "diver9", "0967331188", "surfer", "0942551177", "skater", "0997992211", "player",
+                "0966337711", "legend", "0979774411", "myth88", "0944551133", "ghost1", "0926119944", "spirit", "0978551122", "soul00",
+                "0969337755", "heart7", "0945771199", "brain1", "0975228844", "mind99", "0940115522", "body01", "0925994433", "power2",
+                "0967551199", "energy", "0942338811", "force5", "0997116633", "motion", "0966774411", "speed9", "0979339911", "light1",
+                "0944991155", "dark88", "0926553311", "bright", "0978117744", "dim007", "0969771122", "glow55", "0945229911", "shine9",
+                "0975441133", "spark1", "0940993355", "flame7", "0925118844", "smoke0", "0967771122", "ash999", "0942559911", "dust11",
+                "0997224411", "cloud5", "0966119944", "rain88", "0979447711", "snow01", "0944882255", "ice990", "0926229944", "fire55"
+            ];
+
+            function maskUsername(username) {
+                if (!username) return "";
+                let masked = "";
+                for (let i = 0; i < username.length; i++) {
+                    if (i === 0 || i === username.length - 1) masked += username[i];
+                    else if (i % 2 === 0) masked += "*";
+                    else masked += username[i];
+                }
+                return masked;
+            }
+
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            function generatePlayerList() {
+                // Mix the 20 real names into the top 40 slots randomly
+                let topSource = baseNames.slice(0, 20);
+                let mixedTop = shuffle([...topSource, ...realUsernames]);
+                let remaining = baseNames.slice(20); 
+                let finalList = [...mixedTop, ...remaining];
+
+                tableBody.innerHTML = "";
+                
+                finalList.forEach((name, index) => {
+                    const row = document.createElement("tr");
+                    row.className = "player-row";
+                    row.innerHTML = `
+                        <td class="player-cell text-cyan-400 font-bold">${index + 1}</td>
+                        <td class="player-cell text-slate-100 font-medium">${maskUsername(name)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            }
+
+            for (let i = 0; i < 40; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                const size = Math.random() * 2 + 1; 
+                snowflake.style.width = snowflake.style.height = `${size}px`;
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 15 + 10}s`;
+                snowflake.style.top = `-${Math.random() * 100}px`;
+                body.appendChild(snowflake);
+            }
+
+            generatePlayerList();
+        });
+    </script>
+</body>
+</html>
