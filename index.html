@@ -79,36 +79,34 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // ၁။ Real Usernames Updated
+            // Updated Real Usernames
             const realUsernames = [
-                "Aungpt123", "aakk2024", "kalarr", "lulu11", "Tuyoe1234",
-                "kaungsat111", "Haze31", "insane", "GKkaung9983", "Thawzinhtet12345",
-                "myint9919", "thant11", "BunnyPhoe00077", "wmxd1314", "mmm8388",
-                "09778844040", "wailinko11", "kokoz1234", "nak999", "htet788"
+                "Hola99", "Haze31", "09773489889", "wailinko11", "Ngenge99",
+                "09883262366", "mmm8388", "saiyi12", "waimoe789", "admin01",
+                "Kira0102", "etzp98gkk", "Shwelyanmin2007", "Aungpt123", "09778844040",
+                "aakk2024", "wmxd1314", "nak999", "Yarma990", "myint9919"
             ];
 
-            // ၂။ Random Usernames Updated (180 entries)
+            // 180 Random Usernames
             const baseNames = [
-              "Link11", "htun112", "HanHan00", "waiyan9984", "Khaing987",
-                "yelwinmoe", "Su111", "kaw99", "etzp98gkk", "htet788",
-                "DevilKiller", "thant11", "Haze31", "9883262366", "AC2580",
-                "hnin7572", "9778844040", "myint9919", "yair78", "mmm8388",
-                "astral.mint", "aura.veil", "wishonluna", "comet.blush", "velvet.skyy", "lunar.vow", "cosmic.canvas", "starlight.lilt", "cloud.nine", "opalite.glow",
-                "moss.burn", "fern.whim", "sagemirror", "pine.fable", "river.rio", "oak.studio", "petal.pulse", "wild.wanderer", "ocean.breeze", "hazel.berry",
-                "dawn.fm", "meadow.magic", "pebble.co", "forest.lore", "ivy.hive", "morning.dew", "basalt.blue", "willow.ways", "cedar.soul", "solstice.oak",
-                "flint.field", "ember.trail", "canyon.cool", "drift.wood", "lake.lurk", "reef.roam", "summit.sky", "trail.tide", "moss.inc", "peak.poetry",
-                "neon.nirvana", "pixel.poet", "digital.scape", "vortex.vibes", "synth.meadow", "code.core", "tech.tonic", "logic.gate", "cyber.aura", "macro.mode",
-                "bit.bash", "neural.link", "optic.flow", "hex.vibe", "data.dream", "meta.morph", "node.net", "chip.set", "glitch.glow", "flux.frame",
-                "byte.size", "core.crash", "logic.luxe", "prime.pixel", "shift.key", "trace.route", "hyper.link", "cyber.spun", "tech.tide", "virtual.veil",
-                "shadow.viper", "quest.hunter", "rogue.run", "battle.ready", "high.score", "game.knight", "arcade.master", "speed.runner", "strategy.boss", "controller.wiz",
-                "final.boss", "level.up", "titan.tide", "frost.vale", "drakon.soul", "sniper.set", "mana.mist", "crit.hit", "loot.box", "spawn.point",
-                "frag.flow", "tank.type", "buff.mode", "nerf.this", "aggro.aura", "guild.lead", "quest.log", "boss.raid", "elite.edge", "mythic.move",
-                "street.genius", "urban.mystic", "dapper.dazzle", "luxe.legacy", "chic.curation", "metro.muse", "loft.life", "city.slick", "vogue.vibes", "neon.night",
-                "concrete.cool", "sleek.saga", "modern.mint", "glass.grid", "steel.soul", "velvet.vanguard", "prime.pulse", "trend.storm", "urban.edge", "metro.mind",
-                "sky.line", "curb.cool", "brick.built", "avenue.ace", "plaza.play", "block.bash", "town.talk", "center.stage", "main.mode", "pure.prestige",
-                "giggle.monster", "quirky.tales", "ticklish.taco", "loony.toony", "chuckle.champ", "silly.squad", "punny.pro", "witty.chatter", "happy.feet", "goofy.puppy",
-                "velvet.void", "noctivane", "cursed.ivy", "obsidian.lull", "shadow.play", "mystery.mode", "secret.soul", "hidden.hues", "cryptic.cool", "ghost.grid",
-                "phantom.flow", "dark.quill", "midnight.heir", "gloom.kiss", "eerie.echo", "riddle.run", "mask.mode", "veiled.vibe", "silence.set", "final.fable"
+                "SkyWalker_7", "RedPanda99", "NeoMatrix_0", "Alpha_Z", "SilentEcho", "GoldenHawk", "ShadowStep", "MysticRiver", "FrozenFlame", "Zenith99",
+                "TurboCat", "PixelPirate", "CyberWolf", "LunarQuest", "SolarFlare", "MidnightSun", "OceanBlue_1", "MountainTop", "DesertRain", "WindRacer",
+                "NovaBlast", "CosmosKey", "AstroBoy", "GalaxyGirl", "StarDust", "CometTail", "MeteorHit", "OrbitSpin", "GravityPull", "SpaceCadet",
+                "RogueAce", "StormKing", "ThunderBolt", "LightningFast", "RainMaker", "SnowFlake_X", "IceQueen", "FireBird", "EarthShaker", "AirWave",
+                "BraveHeart", "IronWill", "SteelSoul", "SilverKnight", "BronzeWarrior", "DiamondEye", "EmeraldGreen", "RubyRed", "SapphireBlue", "PearlWhite",
+                "LogicMaster", "BrainyBot", "CodeBreaker", "DataMiner", "TechWizard", "WebSpinner", "AppMaker", "GameDev", "CloudRunner", "BitCoiner",
+                "CoffeeAddict", "TeaLover", "PizzaHut", "BurgerKing", "SushiRoll", "TacoBell", "PastaLover", "SteakHouse", "FruitSalad", "CandyCrush",
+                "MorningDew", "DayLight", "SunsetGlow", "NightOwl", "DreamChaser", "EarlyBird", "LateRiser", "SleepyHead", "WakeUpCall", "HappyVibe",
+                "SmileMore", "LaughLoud", "KindSoul", "PureHeart", "WiseMind", "TrueNorth", "WildChild", "FreeSpirit", "CalmWater", "DeepForest",
+                "SwiftRunner", "FastLane", "HighJump", "LongShot", "GoalGetter", "WinnerCircle", "ProPlayer", "EliteTeam", "Champion_1", "VictoryLap",
+                "CoolKid", "SmartyPants", "FunnyBone", "LuckyStar", "BusyBee", "LazyDay", "CouchPotato", "ActiveLife", "FitBody", "StrongMind",
+                "MusicLover", "BeatBoxer", "GuitarHero", "PianoKey", "DrumRoll", "SingerSong", "DanceFloor", "PartyAnimal", "DiscoKing", "JazzFan",
+                "ArtisticSoul", "PainterPro", "SketchBook", "ColorWheel", "CanvasLife", "CreativeMind", "DesignGeek", "PhotoGenic", "VideoMaker", "MovieBuff",
+                "BookWorm", "StoryTeller", "PoetryNight", "WriterBlock", "ReaderCorner", "LibraryCard", "JournalKeep", "ScriptWrite", "NovelIdeas", "HistoryBuff",
+                "TravelBug", "GlobeTrotter", "WorldMap", "RoadTrip", "FlightMode", "BackPacker", "NatureLover", "CityDweller", "VillageLife", "IslandVibe",
+                "AquaMarine", "CoralReef", "DeepSea", "TidalWave", "SurfBoard", "BeachBall", "SandCastle", "ShellSeeker", "SunTan", "PalmTree",
+                "ForestPath", "JungleBeat", "SafariTrip", "WildLife", "AnimalFan", "BirdWatch", "PetLover", "DogParent", "CatLady", "FishTank",
+                "SpaceTime", "TimeTravel", "FutureWorld", "RetroVibe", "ClassicStyle", "ModernLife", "VintageLook", "OldSchool", "NewWave", "NextGen"
             ];
 
             function maskUsername(username) {
@@ -150,6 +148,7 @@
                 });
             }
 
+            // Snowflake background animation
             for (let i = 0; i < 40; i++) {
                 const snowflake = document.createElement('div');
                 snowflake.className = 'snowflake';
