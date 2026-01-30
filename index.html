@@ -79,35 +79,34 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // ၁။ Real Usernames Updated
+            // Updated Real Usernames
             const realUsernames = [
-                "Thi1146", "Su111", "Cassandra", "kokoz1234", "mpm12321",
-                "naingjunior", "kaungsat111", "hnin7572", "Tuyoe1234", "AC2580",
-                "Aungpt123", "Error12", "Kophyo222999", "woowarr", "waimoe789",
-                "Zwe06", "wailinko11", "Link11", "App22", "Ayewai777"
+                "Popo98", "yair78", "Norara12", "etzp98gkk", "Aungpt123",
+                "Fkoff26", "waimoe789", "myint9919", "htet788", "Zwe06",
+                "Error12", "gkkThein99", "234harry", "Ichigp283", "kaungsat111",
+                "Link11", "wailinko11", "mmm8388", "shin7", "nak999"
             ];
 
-            // ၂။ Random Usernames (180 entries)
+            // Updated Random Usernames (180 entries)
             const baseNames = [
-                "Sky_Walker", "Neon_Soul", "Cyber_King", "Pixel_Guru", "Data_Lord", "Beta_Tester", "Alpha_Wolf", "Iron_Edge", "Shadow_Run", "Vibe_Check",
-                "Moon_Light", "Star_Dust", "Cloud_Nine", "Storm_Born", "Frost_Bite", "Fire_Start", "Wind_Chime", "Earth_Core", "Ocean_Blue", "Mist_Fall",
-                "Golden_Ace", "Silver_Key", "Bronze_God", "Onyx_Gem", "Ruby_Red", "Jade_Stone", "Pearl_White", "Quartz_X", "Zinc_Point", "Lead_Soul",
-                "Speed_Demon", "Slow_Burn", "Quick_Step", "Fast_Lane", "High_Road", "Low_Profile", "Pro_Gamer", "Noob_Master", "Elite_Squad", "Solo_Level",
-                "Mighty_Hero", "Quiet_Ghost", "Loud_Speaker", "Smart_Link", "Wise_Owl", "Cunning_Fox", "Brave_Lion", "Strong_Hold", "Pure_Heart", "Dark_Mind",
-                "Urban_Legend", "City_Slicker", "Town_Talk", "Street_Smart", "Metro_Muse", "Loft_Life", "Main_Frame", "Node_Net", "Code_Breaker", "Bit_Bash",
-                "Logic_Gate", "Tech_Tonic", "Synth_Wave", "Future_Now", "Past_Time", "Present_Day", "Solar_Flare", "Lunar_Orb", "Cosmic_Ray", "Astro_Boy",
-                "Void_Walker", "Rift_Rider", "Portal_Key", "Warp_Drive", "Space_Ship", "Galaxy_Far", "Nebula_Dust", "Nova_Star", "Super_Nova", "Black_Hole",
-                "Quiet_Storm", "Raging_Bull", "Calm_Water", "Solid_Rock", "Wild_Fire", "Cold_Ice", "Warm_Sun", "Soft_Rain", "Hard_Wood", "Green_Leaf",
-                "Blue_Bird", "Red_Robin", "Grey_Wolf", "White_Tiger", "Black_Panther", "Brown_Bear", "Pink_Rose", "Purple_Rain", "Yellow_Sub", "Orange_Sky",
-                "Alpha_One", "Bravo_Two", "Charlie_3", "Delta_Four", "Echo_Five", "Foxtrot_6", "Golf_Seven", "Hotel_Eight", "India_Nine", "Juliet_Ten",
-                "Kilo_11", "Lima_12", "Mike_13", "November_14", "Oscar_15", "Papa_16", "Quebec_17", "Romeo_18", "Sierra_19", "Tango_20",
-                "Uniform_21", "Victor_22", "Whiskey_23", "Xray_24", "Yankee_25", "Zulu_26", "Ace_Point", "Bolt_Run", "Core_Chip", "Dash_Mode",
-                "Epic_Win", "Fail_Safe", "Grid_Lock", "Host_Node", "Icon_Set", "Jump_Start", "Key_Frame", "Link_Chain", "Mask_Mode", "Null_Void",
-                "Open_Src", "Peak_Time", "Quest_On", "Root_User", "Safe_Net", "Task_Done", "Unit_Test", "Vibe_On", "Web_Flow", "Xenon_G",
-                "Yield_X", "Zone_Out", "Arcade_X", "Boss_Run", "Combo_Hit", "Draft_One", "Edge_Case", "Flow_Rate", "Gear_Up", "Hex_Code",
-                "Ink_Spot", "Join_Now", "Keep_Up", "Loop_Back", "Mine_Craft", "Next_Gen", "Oil_Rig", "Path_Way", "Quirk_Y", "Rank_Up",
-                "Stay_Cool", "True_Blue", "Up_Link", "Vocal_X", "Wild_Card", "X_Factor", "Your_Way", "Zero_Sum", "Zen_Mode", "Spark_Y"
-                "nk_Spewt", "Jsdsfoin_Now", "Keep_Usdfp", "Loop_Basdafck", "Mine_Crasdfaft", "saNeasfxt_Gen", "asdOilRig", "Pdfath_Way", "Qudfrk_Y", "asank_Up",
+                "Aura_99", "Zenith_22", "Shadow_X", "Luna_Star", "Pixel_Boy", "Cyber_King", "Neo_Matrix", "Vortex_9", "Echo_11", "Storm_77",
+                "Swift_Key", "Ghost_Rider", "Blaze_01", "Frost_Bite", "Titan_99", "Nova_Sky", "Rogue_One", "Elite_Sniper", "Alpha_01", "Omega_Z",
+                "Sky_Walker", "Iron_Man", "Black_Widow", "Thor_Hammer", "Hulk_Smash", "Captain_M", "Spider_Web", "Flash_Run", "Batman_DK", "Joker_Ha",
+                "Mystery_X", "Silent_Hill", "Dark_Knight", "Light_Speed", "Power_Up", "Level_Max", "Game_Over", "Winner_01", "Pro_Player", "Master_X",
+                "Blue_Ocean", "Red_Fire", "Green_Forest", "White_Snow", "Black_Night", "Silver_Moon", "Golden_Sun", "Purple_Rain", "Orange_Sky", "Yellow_Sea",
+                "Eagle_Eye", "Lion_Heart", "Tiger_Claw", "Wolf_Pack", "Bear_Paw", "Snake_Bite", "Shark_Fin", "Dragon_Fire", "Phoenix_Fly", "Falcon_X",
+                "Mars_Rover", "Venus_Star", "Jupiter_Big", "Saturn_Ring", "Pluto_Cold", "Galaxy_Way", "Comet_Tail", "Meteor_Hit", "Rocket_Man", "Space_X",
+                "Music_Soul", "Dance_Floor", "Singer_11", "Guitar_Hero", "Drum_Beat", "Piano_Keys", "Violin_Soft", "Art_Canvas", "Color_Pal", "Design_Pro",
+                "Chef_Master", "Food_Lover", "Coffee_Add", "Tea_Time", "Cake_Bake", "Pizza_Hot", "Burger_King", "Sushi_Roll", "Ice_Cream", "Sweet_Tooth",
+                "Fast_Car", "Bike_Race", "Truck_Load", "Plane_High", "Boat_Sail", "Train_Fast", "Travel_Bug", "Map_Guide", "World_Tour", "City_Life",
+                "Mountain_Hi", "River_Flow", "Lake_Calm", "Desert_Sun", "Island_Vibe", "Beach_Sand", "Tree_Leaf", "Flower_Bud", "Grass_Green", "Rain_Drop",
+                "Math_Whiz", "Science_Guy", "History_Pen", "Book_Worm", "Write_Hard", "Read_More", "Think_Big", "Dream_High", "Work_Smart", "Stay_True",
+                "Peace_Love", "Happy_Day", "Smile_More", "Kind_Heart", "Good_Vibe", "Best_Life", "Cool_Air", "Warm_Sun", "Soft_Touch", "Hard_Rock",
+                "First_Place", "Second_Win", "Third_Top", "Final_Cut", "Early_Bird", "Night_Owl", "Morning_Dew", "Evening_Star", "Midnight_Run", "Daily_Post",
+                "Simple_Me", "Classic_99", "Modern_Pro", "Retro_X", "Vintage_V", "Future_Now", "Past_Days", "Present_X", "Time_Wait", "Life_Goes",
+                "Big_Boss", "Mini_Me", "Super_Star", "Mega_Mind", "Ultra_X", "Turbo_99", "Hyper_Go", "Sonic_X", "Flash_77", "Boom_Box",
+                "Lucky_Seven", "Ace_Spade", "King_Heart", "Queen_Club", "Jack_Diamond", "Joker_Wild", "Dice_Roll", "Card_Game", "Bet_Win", "Spin_Luck",
+                "Clover_4", "Horseshoe_X", "Star_Light", "Wish_Bone", "Charm_99", "Magic_Wand", "Spell_Cast", "Witch_Hex", "Wizard_Pro", "Dragon_X",
             ];
 
             function maskUsername(username) {
@@ -130,9 +129,10 @@
             }
 
             function generatePlayerList() {
-                // Mix the 20 real names and add the 180 random ones
-                let mixedTop = shuffle([...realUsernames]);
-                let finalList = [...mixedTop, ...baseNames];
+                let topSource = baseNames.slice(0, 20);
+                let mixedTop = shuffle([...topSource, ...realUsernames]);
+                let remaining = baseNames.slice(20); 
+                let finalList = [...mixedTop, ...remaining];
 
                 tableBody.innerHTML = "";
                 
