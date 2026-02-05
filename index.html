@@ -79,34 +79,34 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // Updated Usernames from your list
+            // Updated Real Usernames
             const realUsernames = [
-                "ehh11", "TunTunLay99", "icebold", "Su111", "hlaing112",
-                "apyar619", "KaeKae2112", "lulu11", "Hello1314", "sithu113",
-                "htun112", "etk111", "kkn1994", "kaw99", "Nyeint00",
-                "Mgwann", "ktk1007", "wmxd1314", "wailinko11", "09883262366"
+                "Aungpt123", "kyawz51", "etk111", "Minthant12", "mmm8388",
+                "Kophyo222999", "nayshar99", "Winaung02", "Nyeint00", "hlaing112",
+                "thant11", "etzp98gkk", "kaw99", "09883262366", "Arrpin",
+                "lulu11", "Ayewai777", "myint9919", "wailinko11", "nak999"
             ];
 
             // 180 Random Names
             const baseNames = [
-                "user_99x", "king_001", "shadow99", "pro_player", "lucky_man", "star_77", "winner_win", "fast_lane", "sky_high", "blue_ocean",
-                "tiger_88", "dragon_v", "smile_day", "happy_new", "gold_mine", "silver_p", "diamond_x", "ruby_star", "pearl_99", "crystal_o",
-                "alpha_one", "beta_test", "gamma_ray", "delta_force", "omega_z", "zeta_king", "phi_alpha", "sigma_pro", "theta_v", "kappa_9",
-                "nova_star", "luna_moon", "solar_sun", "mars_red", "venus_v", "pluto_p", "earth_01", "galaxy_x", "comet_c", "meteor_m",
-                "thunder_v", "lightning_z", "storm_99", "rain_drop", "snow_flake", "wind_fast", "fire_hot", "water_cool", "earth_deep", "metal_m",
-                "power_up", "level_max", "game_over", "play_well", "skill_z", "boss_king", "hero_one", "legend_x", "myth_99", "epic_v",
-                "zone_51", "area_x", "base_camp", "point_one", "target_z", "mission_m", "quest_q", "task_master", "goal_getter", "win_all",
-                "swift_s", "quick_q", "sharp_s", "smart_s", "wise_w", "brave_b", "bold_b", "calm_c", "cool_c", "kind_k",
-                "red_rose", "blue_bell", "green_leaf", "yellow_y", "orange_o", "purple_p", "white_w", "black_b", "grey_g", "brown_b",
-                "city_boy", "town_girl", "village_v", "country_c", "world_w", "space_s", "ocean_o", "forest_f", "mountain_m", "river_r",
-                "one_two", "three_four", "five_six", "seven_eight", "nine_ten", "first_f", "last_l", "middle_m", "near_n", "far_f",
-                "hot_fire", "cold_ice", "dry_land", "wet_sea", "big_win", "small_s", "long_l", "short_s", "high_h", "low_l",
-                "fast_run", "slow_move", "hard_work", "easy_e", "best_b", "good_g", "better_b", "top_t", "down_d", "up_u",
-                "man_01", "woman_02", "boy_03", "girl_04", "king_05", "queen_06", "prince_07", "princess_08", "lord_09", "lady_10",
-                "sun_11", "moon_12", "star_13", "cloud_14", "sky_15", "light_16", "dark_17", "day_18", "night_19", "time_20",
-                "apple_a", "banana_b", "cherry_c", "date_d", "elder_e", "fig_f", "grape_g", "honey_h", "iris_i", "jam_j",
-                "kite_k", "lemon_l", "mango_m", "nut_n", "olive_o", "pear_p", "quince_q", "rice_r", "salt_s", "tea_t",
-                "unity_u", "valor_v", "wave_w", "xray_x", "yarn_y", "zero_z", "ace_01", "pro_02", "vip_03", "elite_04"
+                "lucky_win7", "star_player", "gold_member", "ruby_99", "diamond_king", "pro_bettor", "winner_zone", "fast_cash", "sky_high", "ocean_blue",
+                "tiger_888", "dragon_v", "smile_win", "happy_new", "money_maker", "silver_pro", "grand_master", "crystal_7", "pearl_win", "omega_01",
+                "alpha_bet", "beta_win", "gamma_99", "delta_force", "theta_pro", "zeta_star", "sigma_win", "phi_alpha", "kappa_bet", "iota_9",
+                "nova_play", "luna_luck", "solar_bet", "mars_win", "venus_pro", "pluto_88", "earth_99", "galaxy_vip", "comet_fast", "meteor_win",
+                "thunder_x", "lightning_7", "storm_bet", "rain_gold", "snow_luck", "wind_breeze", "fire_spin", "water_flow", "earth_solid", "metal_pro",
+                "power_up9", "level_max", "game_on", "skill_pro", "boss_lady", "hero_win", "legend_77", "myth_play", "epic_win", "zone_play",
+                "area_51w", "base_win", "point_top", "target_hit", "mission_win", "quest_pro", "task_master", "goal_hit", "swift_bet", "quick_cash",
+                "sharp_play", "smart_win", "wise_gambler", "brave_heart", "bold_win", "calm_play", "cool_win", "kind_luck", "red_fire", "blue_ice",
+                "green_luck", "yellow_gold", "orange_spin", "purple_vip", "white_star", "black_jack", "grey_pro", "brown_win", "city_bet", "town_win",
+                "village_luck", "world_win", "space_play", "forest_green", "mountain_top", "river_flow", "first_win", "last_bet", "middle_hit", "near_win",
+                "far_play", "hot_slot", "cold_win", "dry_luck", "wet_win", "big_bonus", "small_bet", "long_shot", "short_win", "high_roller",
+                "low_bet", "fast_lane", "slow_win", "hard_play", "easy_win", "best_bet", "good_luck", "better_win", "top_player", "down_under",
+                "up_high", "man_win", "woman_luck", "boy_play", "girl_win", "king_bet", "queen_win", "prince_luck", "princess_bet", "lord_win",
+                "lady_luck", "sun_bright", "moon_light", "star_shine", "cloud_nine", "sky_limit", "light_speed", "dark_knight", "day_win", "night_play",
+                "time_win", "apple_bet", "banana_win", "cherry_slot", "date_luck", "elder_win", "fig_play", "grape_win", "honey_pot", "iris_win",
+                "jam_luck", "kite_high", "lemon_win", "mango_bet", "nut_win", "olive_play", "pear_luck", "quince_win", "rice_gold", "salt_win",
+                "tea_luck", "unity_bet", "valor_win", "wave_spin", "xray_win", "yarn_play", "zero_win", "ace_high", "vip_club", "elite_bet",
+                "mega_win", "ultra_luck", "super_bet", "hyper_win", "sonic_play", "orbit_win", "neon_light", "pixel_win", "vector_bet", "cyber_luck"
             ];
 
             function maskUsername(username) {
