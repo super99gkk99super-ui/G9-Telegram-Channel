@@ -79,34 +79,9 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // Updated Real Usernames
+            // Updated List from user
             const realUsernames = [
-                "Aungpt123", "kyawz51", "etk111", "Minthant12", "mmm8388",
-                "Kophyo222999", "nayshar99", "Winaung02", "Nyeint00", "hlaing112",
-                "thant11", "etzp98gkk", "kaw99", "09883262366", "Arrpin",
-                "lulu11", "Ayewai777", "myint9919", "wailinko11", "nak999"
-            ];
-
-            // 180 Random Names
-            const baseNames = [
-                "lucky_win7", "star_player", "gold_member", "ruby_99", "diamond_king", "pro_bettor", "winner_zone", "fast_cash", "sky_high", "ocean_blue",
-                "tiger_888", "dragon_v", "smile_win", "happy_new", "money_maker", "silver_pro", "grand_master", "crystal_7", "pearl_win", "omega_01",
-                "alpha_bet", "beta_win", "gamma_99", "delta_force", "theta_pro", "zeta_star", "sigma_win", "phi_alpha", "kappa_bet", "iota_9",
-                "nova_play", "luna_luck", "solar_bet", "mars_win", "venus_pro", "pluto_88", "earth_99", "galaxy_vip", "comet_fast", "meteor_win",
-                "thunder_x", "lightning_7", "storm_bet", "rain_gold", "snow_luck", "wind_breeze", "fire_spin", "water_flow", "earth_solid", "metal_pro",
-                "power_up9", "level_max", "game_on", "skill_pro", "boss_lady", "hero_win", "legend_77", "myth_play", "epic_win", "zone_play",
-                "area_51w", "base_win", "point_top", "target_hit", "mission_win", "quest_pro", "task_master", "goal_hit", "swift_bet", "quick_cash",
-                "sharp_play", "smart_win", "wise_gambler", "brave_heart", "bold_win", "calm_play", "cool_win", "kind_luck", "red_fire", "blue_ice",
-                "green_luck", "yellow_gold", "orange_spin", "purple_vip", "white_star", "black_jack", "grey_pro", "brown_win", "city_bet", "town_win",
-                "village_luck", "world_win", "space_play", "forest_green", "mountain_top", "river_flow", "first_win", "last_bet", "middle_hit", "near_win",
-                "far_play", "hot_slot", "cold_win", "dry_luck", "wet_win", "big_bonus", "small_bet", "long_shot", "short_win", "high_roller",
-                "low_bet", "fast_lane", "slow_win", "hard_play", "easy_win", "best_bet", "good_luck", "better_win", "top_player", "down_under",
-                "up_high", "man_win", "woman_luck", "boy_play", "girl_win", "king_bet", "queen_win", "prince_luck", "princess_bet", "lord_win",
-                "lady_luck", "sun_bright", "moon_light", "star_shine", "cloud_nine", "sky_limit", "light_speed", "dark_knight", "day_win", "night_play",
-                "time_win", "apple_bet", "banana_win", "cherry_slot", "date_luck", "elder_win", "fig_play", "grape_win", "honey_pot", "iris_win",
-                "jam_luck", "kite_high", "lemon_win", "mango_bet", "nut_win", "olive_play", "pear_luck", "quince_win", "rice_gold", "salt_win",
-                "tea_luck", "unity_bet", "valor_win", "wave_spin", "xray_win", "yarn_play", "zero_win", "ace_high", "vip_club", "elite_bet",
-                "mega_win", "ultra_luck", "super_bet", "hyper_win", "sonic_play", "orbit_win", "neon_light", "pixel_win", "vector_bet", "cyber_luck"
+                "PWL098265", "Gkk99999", "Yye8431", "kyaw27", "maung321", "welll", "Pye456", "PyaeSone777", "Aung216131", "Bye333", "sawsattohtoo", "Yelay40", "Jkr1985", "kyawshinn25252", "Hein76", "tuntunlin123", "NaingAung", "HtetNaing2002", "gk689", "Mwezido", "zawmin745", "Myo237", "pyaephyoaung3344", "NightElf3", "thithiaung54", "tharlay123", "nyinyilay", "myogyi5", "12345aung", "minkhantmaung", "Kaung1111", "mk323960", "TTK444147527", "AungAung88", "Htun123", "MayBaraniKhin1", "kokol", "kk094", "pyae95361", "ZinMin11", "phyominthant", "koko1122", "WMT59230", "Chanat12", "Zawwintun", "thetoo2023", "pankabyar", "nandartun", "PhoeChan123", "AungKyawphyo", "Aunglay000000", "777nyein", "shinenaung", "ram22", "theinwin777", "NaingNaing123", "myohtike12", "knnl1806", "AungSan1212", "PyaePyae123", "bajardar", "minn5721", "naynay1234", "Eyi22222", "soelin2600", "12345kyaw", "Minthwe2019", "343425", "yiyi4040", "yehtetthu457193", "Kkkzy", "Samm123", "Ko282003", "pyae5566", "ei6677", "thwal", "Thar1111", "Klhs63151", "Sainoomkham", "phyo18", "Htun1985", "Omg2468", "ngamoe88", "tun1993", "SawWiPhyoe52980", "Aungthetpaing224", "aungmyinttun12", "myo00", "hsu834", "koko890ko", "juetlay", "hhw7744", "yaung1234", "ChawSu12", "skyaungaung1234", "THA390", "Aung2008", "thuthu567", "Theintunoo", "no123", "saw11111", "Zawthataung", "zawmin21", "Thiha112233", "atd4455", "pyae37161", "Tayzp", "AyeThan", "ZawMin333", "ma1111", "mon777", "694310", "Myoehlaingwin", "thiha93", "nangei4084", "min9988877", "yaminoo", "Minkoko98", "situu", "kokyaw123", "San259694", "linkyawkyaw", "aitaimk", "567890min", "khuntk", "tun13579", "gkkwinoo12", "ko432141", "wwwww66", "kaunglay11", "khant2345", "koko199", "sai789", "Kaito", "yekyaw4456", "Tonli", "Kaungkyaw22", "wailinoo247", "phyosithu12345", "waiyan24", "kaungkyaw", "zwekoko123", "kyi13", "linko12", "AB12312", "zayaroo", "pupu678", "Zinzinnyein", "THARGYI26", "TYPAZ", "Gkk111111", "gkk991234", "Thuhtet00", "thukaas", "12min", "7778mon", "Min922", "zza1111", "Aunza", "tharthar12", "chit2580", "kyi12346", "aungzawthan", "San789000", "kyawzin007", "myo99", "Shanlay", "kokotun233574", "mgmgchit1357", "Phothar123", "payephyo390", "Gkk5588", "mp123", "Hein4367i", "1linhtet1", "myo681992", "Tunlin280", "apwa323", "komyo999", "12345stst", "NyiLinMgMg", "etzp98gkk", "aung7834", "sithu113", "putue", "mmm8388", "Aungpt123", "icebold", "paing893", "katekate", "Arrpin", "Su111", "htun112", "HlaingMin90", "bububaba", "kaw99", "wailinko11", "Jgjgxid", "ehh11", "Ayewai777"
             ];
 
             function maskUsername(username) {
@@ -129,10 +104,8 @@
             }
 
             function generatePlayerList() {
-                let topSource = baseNames.slice(0, 20);
-                let mixedTop = shuffle([...topSource, ...realUsernames]);
-                let remaining = baseNames.slice(20); 
-                let finalList = [...mixedTop, ...remaining];
+                // Shuffle all provided usernames
+                let finalList = shuffle([...realUsernames]);
 
                 tableBody.innerHTML = "";
                 
