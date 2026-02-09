@@ -79,9 +79,34 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // Updated List from user
+            // Updated Real Usernames
             const realUsernames = [
-                "PWL098265", "Gkk99999", "Yye8431", "kyaw27", "maung321", "welll", "Pye456", "PyaeSone777", "Aung216131", "Bye333", "sawsattohtoo", "Yelay40", "Jkr1985", "kyawshinn25252", "Hein76", "tuntunlin123", "NaingAung", "HtetNaing2002", "gk689", "Mwezido", "zawmin745", "Myo237", "pyaephyoaung3344", "NightElf3", "thithiaung54", "tharlay123", "nyinyilay", "myogyi5", "12345aung", "minkhantmaung", "Kaung1111", "mk323960", "TTK444147527", "AungAung88", "Htun123", "MayBaraniKhin1", "kokol", "kk094", "pyae95361", "ZinMin11", "phyominthant", "koko1122", "WMT59230", "Chanat12", "Zawwintun", "thetoo2023", "pankabyar", "nandartun", "PhoeChan123", "AungKyawphyo", "Aunglay000000", "777nyein", "shinenaung", "ram22", "theinwin777", "NaingNaing123", "myohtike12", "knnl1806", "AungSan1212", "PyaePyae123", "bajardar", "minn5721", "naynay1234", "Eyi22222", "soelin2600", "12345kyaw", "Minthwe2019", "343425", "yiyi4040", "yehtetthu457193", "Kkkzy", "Samm123", "Ko282003", "pyae5566", "ei6677", "thwal", "Thar1111", "Klhs63151", "Sainoomkham", "phyo18", "Htun1985", "Omg2468", "ngamoe88", "tun1993", "SawWiPhyoe52980", "Aungthetpaing224", "aungmyinttun12", "myo00", "hsu834", "koko890ko", "juetlay", "hhw7744", "yaung1234", "ChawSu12", "skyaungaung1234", "THA390", "Aung2008", "thuthu567", "Theintunoo", "no123", "saw11111", "Zawthataung", "zawmin21", "Thiha112233", "atd4455", "pyae37161", "Tayzp", "AyeThan", "ZawMin333", "ma1111", "mon777", "694310", "Myoehlaingwin", "thiha93", "nangei4084", "min9988877", "yaminoo", "Minkoko98", "situu", "kokyaw123", "San259694", "linkyawkyaw", "aitaimk", "567890min", "khuntk", "tun13579", "gkkwinoo12", "ko432141", "wwwww66", "kaunglay11", "khant2345", "koko199", "sai789", "Kaito", "yekyaw4456", "Tonli", "Kaungkyaw22", "wailinoo247", "phyosithu12345", "waiyan24", "kaungkyaw", "zwekoko123", "kyi13", "linko12", "AB12312", "zayaroo", "pupu678", "Zinzinnyein", "THARGYI26", "TYPAZ", "Gkk111111", "gkk991234", "Thuhtet00", "thukaas", "12min", "7778mon", "Min922", "zza1111", "Aunza", "tharthar12", "chit2580", "kyi12346", "aungzawthan", "San789000", "kyawzin007", "myo99", "Shanlay", "kokotun233574", "mgmgchit1357", "Phothar123", "payephyo390", "Gkk5588", "mp123", "Hein4367i", "1linhtet1", "myo681992", "Tunlin280", "apwa323", "komyo999", "12345stst", "NyiLinMgMg", "etzp98gkk", "aung7834", "sithu113", "putue", "mmm8388", "Aungpt123", "icebold", "paing893", "katekate", "Arrpin", "Su111", "htun112", "HlaingMin90", "bububaba", "kaw99", "wailinko11", "Jgjgxid", "ehh11", "Ayewai777"
+                "Thatho890", "234harry", "Arrpin", "mgkclone", "naing0786",
+                "saiyi12", "saisai7870", "Kelvin11", "naing0779", "aakk2024",
+                "Dooperfex", "chichi99", "nainga0739", "KyawSoeAung2001", "yeko49",
+                "Yebo1234", "yeko52", "09798675932", "Zinphyowai05", "wailinko11"
+            ];
+
+            // 180 Random Names
+            const baseNames = [
+                "user_99x", "king_001", "shadow99", "pro_player", "lucky_man", "star_77", "winner_win", "fast_lane", "sky_high", "blue_ocean",
+                "tiger_88", "dragon_v", "smile_day", "happy_new", "gold_mine", "silver_p", "diamond_x", "ruby_star", "pearl_99", "crystal_o",
+                "alpha_one", "beta_test", "gamma_ray", "delta_force", "omega_z", "zeta_king", "phi_alpha", "sigma_pro", "theta_v", "kappa_9",
+                "nova_star", "luna_moon", "solar_sun", "mars_red", "venus_v", "pluto_p", "earth_01", "galaxy_x", "comet_c", "meteor_m",
+                "thunder_v", "lightning_z", "storm_99", "rain_drop", "snow_flake", "wind_fast", "fire_hot", "water_cool", "earth_deep", "metal_m",
+                "power_up", "level_max", "game_over", "play_well", "skill_z", "boss_king", "hero_one", "legend_x", "myth_99", "epic_v",
+                "zone_51", "area_x", "base_camp", "point_one", "target_z", "mission_m", "quest_q", "task_master", "goal_getter", "win_all",
+                "swift_s", "quick_q", "sharp_s", "smart_s", "wise_w", "brave_b", "bold_b", "calm_c", "cool_c", "kind_k",
+                "red_rose", "blue_bell", "green_leaf", "yellow_y", "orange_o", "purple_p", "white_w", "black_b", "grey_g", "brown_b",
+                "city_boy", "town_girl", "village_v", "country_c", "world_w", "space_s", "ocean_o", "forest_f", "mountain_m", "river_r",
+                "one_two", "three_four", "five_six", "seven_eight", "nine_ten", "first_f", "last_l", "middle_m", "near_n", "far_f",
+                "hot_fire", "cold_ice", "dry_land", "wet_sea", "big_win", "small_s", "long_l", "short_s", "high_h", "low_l",
+                "fast_run", "slow_move", "hard_work", "easy_e", "best_b", "good_g", "better_b", "top_t", "down_d", "up_u",
+                "man_01", "woman_02", "boy_03", "girl_04", "king_05", "queen_06", "prince_07", "princess_08", "lord_09", "lady_10",
+                "sun_11", "moon_12", "star_13", "cloud_14", "sky_15", "light_16", "dark_17", "day_18", "night_19", "time_20",
+                "apple_a", "banana_b", "cherry_c", "date_d", "elder_e", "fig_f", "grape_g", "honey_h", "iris_i", "jam_j",
+                "kite_k", "lemon_l", "mango_m", "nut_n", "olive_o", "pear_p", "quince_q", "rice_r", "salt_s", "tea_t",
+                "unity_u", "valor_v", "wave_w", "xray_x", "yarn_y", "zero_z", "ace_01", "pro_02", "vip_03", "elite_04"
             ];
 
             function maskUsername(username) {
@@ -104,8 +129,11 @@
             }
 
             function generatePlayerList() {
-                // Shuffle all provided usernames
-                let finalList = shuffle([...realUsernames]);
+                // Mix the 20 real names with the first 20 random names, then add the rest
+                let topSource = baseNames.slice(0, 20);
+                let mixedTop = shuffle([...topSource, ...realUsernames]);
+                let remaining = baseNames.slice(20); 
+                let finalList = [...mixedTop, ...remaining];
 
                 tableBody.innerHTML = "";
                 
@@ -120,6 +148,7 @@
                 });
             }
 
+            // Snowflake animation
             for (let i = 0; i < 40; i++) {
                 const snowflake = document.createElement('div');
                 snowflake.className = 'snowflake';
