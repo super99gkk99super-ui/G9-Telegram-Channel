@@ -79,34 +79,34 @@
             const tableBody = document.getElementById('player-table-body');
             const body = document.body;
 
-            // Updated Real Usernames
+            // Updated Real Usernames from your list
             const realUsernames = [
-                "ToeToeAung99", "hein750", "RollsRoyces", "bububaba", "kaw99",
-                "mmm8388", "min969", "Arrpin", "NyiLinMgMg", "oneway99",
-                "Ayewai777", "yyu880", "sharkhant", "admin01", "Su111",
-                "wailinko11", "nak999", "Nyeint00", "Reinn", "Cassandra_"
+                "htun112", "RollsRoyces", "Nyeint00", "minaung97", "hlaing112",
+                "Aungmh702", "bay26", "9883262366", "kaungsat111", "KoShine60",
+                "nayshar99", "09690911346", "wailinko11", "kaw99", "TarLainMar1234",
+                "Ppaing2004", "lin455", "etzp98gkk", "AC2580", "zeyar555"
             ];
 
             // 180 Random Names
             const baseNames = [
-                "mega_win", "player_007", "lucky_sky", "dark_knight", "gold_rush", "ocean_breeze", "tiger_eye", "fast_track", "star_gazer", "neon_light",
-                "alpha_v", "sonic_wave", "pixel_king", "cloud_walker", "iron_fist", "moon_child", "solar_flare", "deep_blue", "silver_fox", "storm_rider",
-                "wild_card", "zen_master", "urban_legend", "fire_fly", "ice_breaker", "bolt_action", "shadow_play", "cyber_punk", "tech_guru", "data_mine",
-                "phantom_x", "glitch_fix", "macro_win", "micro_v", "nano_bot", "quantum_q", "vector_v", "matrix_m", "orbit_o", "portal_p",
-                "ghost_rider", "silent_hill", "echo_location", "radar_r", "sonar_s", "beacon_b", "signal_s", "proxy_p", "relay_r", "link_l",
-                "vortex_v", "cyclone_c", "typhoon_t", "monsoon_m", "breeze_b", "gale_g", "mist_m", "fog_f", "haze_h", "dew_d",
-                "apex_a", "summit_s", "peak_p", "crest_c", "ridge_r", "valley_v", "canyon_c", "cliff_c", "dune_d", "reef_r",
-                "diamond_d", "ruby_r", "sapphire_s", "emerald_e", "topaz_t", "onyx_o", "quartz_q", "opal_o", "jade_j", "garnet_g",
-                "atlas_a", "titan_t", "hero_h", "myth_m", "saga_s", "lore_l", "fable_f", "tine_t", "crown_c", "throne_t",
-                "eagle_e", "hawk_h", "falcon_f", "raven_r", "owl_o", "phoenix_p", "griffin_g", "dragon_d", "wolf_w", "bear_b",
-                "mars_m", "venus_v", "jupiter_j", "saturn_s", "uranus_u", "neptune_n", "pluto_p", "mercury_m", "earth_e", "sun_s",
-                "ace_high", "jack_pot", "king_pin", "queen_bee", "joker_j", "dealer_d", "bet_win", "stack_s", "chip_c", "roll_r",
-                "viper_v", "cobra_c", "mamba_m", "python_p", "boa_b", "adder_a", "krait_k", "asp_a", "naga_n", "serpent_s",
-                "hunter_h", "scout_s", "ranger_r", "warden_w", "guard_g", "knight_k", "squire_s", "noble_n", "lord_l", "duke_d",
-                "nova_n", "pulsar_p", "quasar_q", "nebula_n", "comet_c", "meteor_m", "asteroid_a", "galaxy_g", "cosmos_c", "void_v",
-                "maple_m", "oak_o", "pine_p", "cedar_c", "birch_b", "willow_w", "elm_e", "ash_a", "yew_y", "fir_f",
-                "river_r", "lake_l", "sea_s", "pond_p", "creek_c", "stream_s", "brook_b", "marsh_m", "delta_d", "bay_b",
-                "north_n", "south_s", "east_e", "west_w", "upper_u", "lower_l", "inner_i", "outer_o", "central_c", "side_s"
+                "Mg_Kaung_99", "Lucky_Star_01", "Winner_Win_88", "Sky_Blue_77", "Golden_Key_22", "Shadow_X_11", "Pro_Player_55", "Mega_Win_00", "Royal_King_33", "Fast_Track_44",
+                "Alpha_99", "Beta_Max", "Gamma_Ray", "Delta_V", "Zeta_Zero", "Omega_One", "Sigma_Star", "Phi_Point", "Theta_Ten", "Kappa_King",
+                "User_A101", "User_B202", "User_C303", "User_D404", "User_E505", "User_F606", "User_G707", "User_H808", "User_I909", "User_J000",
+                "Red_Fire_01", "Blue_Ice_02", "Green_Leaf_03", "Yellow_Sun_04", "Dark_Moon_05", "White_Snow_06", "Silver_Coin_07", "Gold_Bar_08", "Diamond_D_09", "Ruby_R_10",
+                "Tiger_King", "Dragon_Fly", "Lion_Heart", "Eagle_Eye", "Shark_Bite", "Wolf_Pack", "Bear_Claw", "Fox_Tail", "Snake_Skin", "Hawk_Wing",
+                "City_Light", "Ocean_Deep", "Mountain_High", "River_Flow", "Forest_Run", "Desert_Heat", "Space_Walk", "Galaxy_G", "Comet_C", "Meteor_M",
+                "Play_Winner", "Game_Master", "Skill_Full", "Top_Tier", "Elite_E", "Legend_L", "Myth_M", "Epic_E", "Nova_N", "Storm_S",
+                "Mg_Mg_001", "Ko_Ko_002", "Ma_Ma_003", "Kyaw_Kyaw_04", "Zaw_Zaw_05", "Aung_Aung_06", "Hla_Hla_07", "Mya_Mya_08", "Tun_Tun_09", "Win_Win_10",
+                "Star_Light", "Moon_Beam", "Sun_Shine", "Cloud_Nine", "Rain_Drop", "Wind_Speed", "Thunder_T", "Bolt_B", "Flash_F", "Quick_Q",
+                "user_v1", "user_v2", "user_v3", "user_v4", "user_v5", "user_v6", "user_v7", "user_v8", "user_v9", "user_v10",
+                "Power_Up", "Level_X", "Boss_B", "Hero_H", "Knight_K", "Wizard_W", "Rogue_R", "Archer_A", "Titan_T", "Giant_G",
+                "Rose_01", "Lily_02", "Iris_03", "Daisy_04", "Lotus_05", "Orchid_06", "Tulip_07", "Violet_08", "Poppy_09", "Fern_10",
+                "Apple_A", "Banana_B", "Cherry_C", "Date_D", "Elder_E", "Fig_F", "Grape_G", "Honey_H", "Ice_I", "Jam_J",
+                "Kite_K", "Lemon_L", "Mango_M", "Nut_N", "Olive_O", "Pear_P", "Quince_Q", "Rice_R", "Salt_S", "Tea_T",
+                "Unity_U", "Valor_V", "Wave_W", "Xray_X", "Yarn_Y", "Zero_Z", "Ace_A1", "Pro_P2", "Vip_V3", "Best_B4",
+                "One_11", "Two_22", "Three_33", "Four_44", "Five_55", "Six_66", "Seven_77", "Eight_88", "Nine_99", "Ten_10",
+                "North_N", "South_S", "East_E", "West_W", "Up_U1", "Down_D2", "Left_L3", "Right_R4", "Near_N5", "Far_F6",
+                "Cool_C1", "Hot_H2", "Dry_D3", "Wet_W4", "Big_B5", "Small_S6", "Long_L7", "Short_S8", "Fast_F9", "Slow_S0"
             ];
 
             function maskUsername(username) {
